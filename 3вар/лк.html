@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <div class="header">
+               
+            <a href="Главная.html" class="logo">
+            <img src="logo (1).png" class="loo">
+        </a>
+        <nav class="scroll-menu">
+            <a href="Главная.html">Главная</a>
+            <a href="курсы.html">Курсы</a>
+            <a href="блог.html">Блог</a>
+            <a href="Контакты.html">Контакты</a>
+        </nav>
+        <a href="Вход.html">
+            <img src="reg.PNG" class="loo">
+        </a>
+    </div>
+    </header>
+
+
+<main>
+
+
+    <div class="container">
+        <h2>Welcome to your profile!</h2>
+        <div class="kart">
+            <div class="cc" style="display: flex; flex-direction: column;">
+            <!-- <input type="file" accept="image/*" id="fileInput"> -->
+                <img  id="imagePreview" src="фото_профиля.PNG"></div>
+            
+            <div class="info">
+                <p id="usernameDisplay"></p>
+                <br>
+                <p>Дата рождения: 08.06.2006</p>
+                <br>
+                <p>Количество пройденных курсов: 3.</p>
+                <br>
+                <p>Курсы в процессе прохождения: 2.</p>
+                <button>Редактировать</button>
+            </div>
+        </div>
+        <br>
+        <h2>Пройденные курсы:</h2>
+        <br>
+        <div class="curs">
+            <div class="curs1">
+                <a href="курсы.html"><div class="nazv">
+                    <img src="https://cdn.stepik.net/media/cache/images/courses/190100/cover_QyfEedX/15bca0ae59c581af793173b28135eb07.png">
+                    <p> Многопоточный Python</p>
+                </div></a>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:900 руб.</p>
+                </div>
+            </div>
+
+            <div class="curs1">
+                <a href="курсы.html"><div class="nazv">
+                    <img src="1.PNG" >
+                    <a href="курсы.html"><p> "Поколение Python": курс для начинающих</p></a>
+                </div></a>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:Бесплатно</p>
+                </div>
+            </div>
+            
+            <div class="curs1">
+                <a href="курсы.html"><div class="nazv">
+                    <img src="2.PNG" >
+                    <p> Бренд-менеджер</p>
+                </div></a>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:1299 руб.</p>
+                </div>
+            </div>
+            
+         
+
+        </div>
+        <br>
+
+        <h2>Непройденные курсы:</h2>
+        <br>
+        <div class="curs">
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p> 3D-моделирование с нуля</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:900 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p> Инженер умных устройств</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:1020 руб.</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="profile.js"></script>
+</main>
+<script>
+ //   const fileInput = document.getElementById('fileInput');
+//const imagePreview = document.getElementById('imagePreview');
+
+//fileInput.addEventListener('change', function() {
+//  const file = fileInput.files[0];
+//  const reader = new FileReader();
+
+ // reader.onload = function(e) {
+ //   imagePreview.src = e.target.result;
+//};
+
+  //reader.readAsDataURL(file);
+//});
+</script>
+<footer>
+    <a href="Главная.html" class="logo">
+        <img src="logo (1).png" class="loo">
+    </a>
+    <nav class="scroll-menu">
+        <a href="Главная.html">Главная</a>
+        <a href="курсы.html">Курсы</a>
+        <a href="блог.html">Блог</a>
+        <a href="Контакты.html">Контакты</a>
+    </nav>
+    <div class="foo">
+    <p>8 (800) 222-12-89</p>
+        
+        <p>+7 499 444 90 36</p>
+        
+        <p>Напишите Сергею Попкову — ответственному за качество курсов</p>
+        
+        <p>г. Москва, ул. Тимура Фрунзе, дом 11, корпус 2, этаж 1, помещение 1, комната 75</p>
+        
+        <p>hello@skillbox.ru</p></div>
+</footer>
+</body>
+</html>

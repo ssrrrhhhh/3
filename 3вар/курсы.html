@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <div class="header">
+               
+            <a href="Главная.html" class="logo">
+            <img src="logo (1).png" class="loo">
+        </a>
+        <nav class="scroll-menu">
+            <a href="Главная.html">Главная</a>
+            <a href="курсы.html">Курсы</a>
+            <a href="блог.html">Блог</a>
+            <a href="Контакты.html">Контакты</a>
+        </nav>
+        <a href="Вход.html">
+            <img src="reg.PNG" class="loo">
+        </a>
+    </div>
+    </header>
+    <main>
+        <div class="fl">
+      <button class="kn1">Общественные науки</button>
+       <button class="kn2">Технические науки</button>
+    </div>
+    <script>
+        
+        let coll = document.getElementsByClassName('kn1');
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+        let ccurs1Elements = document.querySelectorAll('#ccurs1');
+        ccurs1Elements.forEach(function (ccurs1Element) {
+            if (ccurs1Element.style.maxHeight) {
+                ccurs1Element.style.maxHeight = null;
+            } else {
+                ccurs1Element.style.maxHeight = ccurs1Element.scrollHeight + 'px';
+            }
+        });
+    });
+}
+    
+    </script>
+    <script>
+        
+        let call = document.getElementsByClassName('kn2');
+for (let i = 0; i < call.length; i++) {
+    call[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+        let ccurs2Elements = document.querySelectorAll('#ccurs2');
+        ccurs2Elements.forEach(function (ccurs2Element) {
+            if (ccurs2Element.style.maxHeight) {
+                ccurs2Element.style.maxHeight = null;
+            } else {
+                ccurs2Element.style.maxHeight = ccurs2Element.scrollHeight + 'px';
+            }
+        });
+    });
+}
+    
+    </script>
+
+
+        <h2>Общественные науки</h2>
+        <br>
+        <div id="ccurs1">
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p> Бренд-менеджер</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:2999 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p>Китайский для начинающих</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:Бесплатно</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p> Русский на 100 баллов</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:10 000 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p> Психология с нуля</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена: от 300 руб.</p>
+                </div>
+            </div>
+            </div>
+
+
+     
+        <br>
+        <div id="ccurs1">
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p>Английский язык до уровня А1</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:3 890 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p> Уроки психологии с психиатром</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:5 000 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p> Русский для любителей</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:Бесплатно</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="1.PNG">
+                    <p> Обществознание на 100 баллов</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:9 999 руб.</p>
+                </div>
+            </div>
+            </div>
+
+
+        <br>
+        </div>
+        <br>
+        <h2>Технические науки</h2>
+        <br>
+        <div id="ccurs2">
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p> 3D-моделирование с нуля</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:900 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p> Инженер умных устройств</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:1020 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p>Разработчик: старт в ИТ с нуля до Junior</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:100 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p> Разработчик Игр на Unreal Engine</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:5000 руб.</p>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+        <br>
+        <div id="ccurs2">
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p>Frontend-разработчик</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:900 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p> Разработчик на C++ с нуля до Junior</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:1020 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p>Тестирование JavaScript и React приложений</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:100 руб.</p>
+                </div>
+            </div>
+            <div class="curs1">
+                <div class="nazv">
+                    <img src="2.PNG">
+                    <p>Многопоточный Python</p>
+                </div>
+                <div class="podr">
+                    <p>Авторский Автор</p>
+                    <p>Цена:5000 руб.</p>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <a href="Главная.html" class="logo">
+            <img src="logo (1).png" class="loo">
+        </a>
+        <nav class="scroll-menu">
+            <a href="Главная.html">Главная</a>
+            <a href="курсы.html">Курсы</a>
+            <a href="блог.html">Блог</a>
+            <a href="Контакты.html">Контакты</a>
+        </nav>
+        <div class="foo">
+        <p>8 (800) 222-12-89</p>
+            
+            <p>+7 499 444 90 36</p>
+            
+            <p>Напишите Сергею Попкову — ответственному за качество курсов</p>
+            
+            <p>г. Москва, ул. Тимура Фрунзе, дом 11, корпус 2, этаж 1, помещение 1, комната 75</p>
+            
+            <p>hello@skillbox.ru</p></div>
+    </footer>
+</body>
+</html>
